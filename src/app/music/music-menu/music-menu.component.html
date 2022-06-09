@@ -1,0 +1,7 @@
+<div class="menu-icon" (click)="openMusicMenu()">
+    <img src="./../assets/icons/music-menu.svg" />
+</div>
+
+<section *ngIf="menuIsOpen">
+    <app-music-list (isMenuOpen)="appOnMenuStateEmit($event)"></app-music-list>
+</section>
