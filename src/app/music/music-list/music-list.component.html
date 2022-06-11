@@ -1,7 +1,13 @@
-<section>
-    <div class="container">
-        <div class="close-icon" (click)="closeMenu()">
-            <img src="../../../assets/icons/close.svg">
-        </div>
+<div class="container">
+    <div class="close-icon" (click)="closeMenu()">
+        <img src="../../../assets/icons/close.svg">
+    </div>
+</div>
+
+<section class="music-list-container">
+    <div *ngFor="let song of musicList">
+        {{song.title}}
+        {{song.artists}}
+        {{song.image}}
     </div>
 </section>

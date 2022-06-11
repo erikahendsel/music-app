@@ -1,9 +1,10 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-music-menu',
   templateUrl: './music-menu.component.html',
-  styleUrls: ['./music-menu.component.scss']
+  styleUrls: ['./music-menu.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MusicMenuComponent implements OnInit {
   menuIsOpen: boolean = false

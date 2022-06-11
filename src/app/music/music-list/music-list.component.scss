@@ -3,4 +3,9 @@
     background-color: pink;
     height: 100%;
     width: 90%;
+    z-index: 1;
+}
+.music-list-container {
+    position: absolute;
+    z-index: 2;
 }
