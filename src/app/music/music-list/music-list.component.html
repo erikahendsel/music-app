@@ -6,8 +6,8 @@
 
 <section class="music-list-container">
     <div *ngFor="let song of musicList">
-        {{song.title}}
-        {{song.artists}}
-        {{song.image}}
+        {{song?.title}}
+        {{song?.artists}}
+        {{song?.image}}
     </div>
 </section>
