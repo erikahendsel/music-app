@@ -1,11 +1,41 @@
 .container {
-    position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 1;
-    background-image: linear-gradient(#704D62, #121212);
-}
-.music-list-container {
-    position: absolute;
     z-index: 2;
+    background-image: linear-gradient(#704D62, #121212);
+    padding: 0 1.25em;
+
+    .close-icon {
+        text-align: end;
+    }
+
+    .song-container {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        color: white;
+        margin-bottom: 0.5rem;
+        -webkit-box-shadow: 5px 5px 10px 5px #0000000d; 
+        box-shadow: 5px 5px 10px 5px #0000000d;
+
+        .text {
+            padding-left: 0.75rem;
+            line-height: 24px;
+            .title {
+                font-weight: 700;
+                font-size: 1rem;
+            }
+            .artist {
+                font-weight: 400;
+                font-size:0.75rem;
+            }
+        }
+
+
+
+        .image img{
+            border-radius: 7px;
+            width: 3.75rem;
+        }
+    }
 }

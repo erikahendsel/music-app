@@ -2,18 +2,19 @@
     <div class="close-icon" (click)="closeMenu()">
         <img src="../../../assets/icons/close.svg">
     </div>
+
+    <section class="music-list-container">
+        <ng-container *ngFor="let song of musicList">
+            <div class="song-container">
+                <div class="image">
+                    <img src={{song.image}} alt="">
+                </div>
+                <div class="text">
+                    <p class="title">{{song?.title}}</p>
+                    <p class="artist">{{song?.artists}}</p>
+                </div>
+            </div>
+        </ng-container>
+    </section>
 </div>
 
-<section class="music-list-container">
-    <div *ngFor="let song of musicList">
-        <div class="song-container">
-            <div class="image">
-                <img src={{song.image}} alt="">
-            </div>
-            <div class="text">
-                {{song?.title}}
-                {{song?.artists}}
-            </div>
-        </div>
-    </div>
-</section>
