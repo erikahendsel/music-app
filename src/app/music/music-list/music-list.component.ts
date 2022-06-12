@@ -10,6 +10,8 @@ import { MusicList } from 'src/app/interfaces/music-list';
 export class MusicListComponent implements OnInit {
 
   @Output() isMenuOpen = new EventEmitter<boolean>();
+  @Output() selectedSongId = new EventEmitter<MusicList>();
+
   musicList: MusicList[] = [];
 
   constructor(private httpClient: HttpClient) { }
@@ -18,14 +20,18 @@ export class MusicListComponent implements OnInit {
     this.getMusicList();
   }
 
+  appOnSongClicked(songId: MusicList) {
+    this.selectedSongId.emit(songId);
+    this.closeMenu();
+  }
+
   closeMenu() {
     this.isMenuOpen.emit(false)
   }
 
   getMusicList() {
     this.httpClient.get<MusicList[]>('assets/json/music-list.json').subscribe((res) => {
-    this.musicList = res;
-      console.log('--- result :: ',  res);
+      this.musicList = res;
     });
   }
 

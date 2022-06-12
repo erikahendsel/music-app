@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { MusicList } from 'src/app/interfaces/music-list';
 
 @Component({
   selector: 'app-music-menu',
@@ -6,7 +7,9 @@ import { ChangeDetectionStrategy, Component, OnChanges, OnInit, SimpleChanges } 
   styleUrls: ['./music-menu.component.scss'],
 })
 export class MusicMenuComponent implements OnInit {
+
   menuIsOpen: boolean = false
+  currentSong: MusicList = {} as MusicList;
 
   constructor() { }
 
@@ -18,6 +21,10 @@ export class MusicMenuComponent implements OnInit {
 
   appOnMenuStateEmit(menuState: boolean) {
     this.menuIsOpen = menuState;
+  }
+
+  appOnSelectedSongEmit(selectedSong: MusicList) {
+    this.currentSong = selectedSong;
   }
 
 }

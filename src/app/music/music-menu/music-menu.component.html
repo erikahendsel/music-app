@@ -2,6 +2,27 @@
     <img src="./../assets/icons/music-menu.svg" />
 </div>
 
-<section *ngIf="!menuIsOpen">
-    <app-music-list (isMenuOpen)="appOnMenuStateEmit($event)"></app-music-list>
+<section *ngIf="menuIsOpen; else player">
+    <app-music-list (isMenuOpen)="appOnMenuStateEmit($event)" (selectedSongId)="appOnSelectedSongEmit($event)"></app-music-list>
 </section>
+
+<ng-template #player>
+    <div class="container">
+        <div class="image">
+            <img src={{currentSong.image}} alt="">
+        </div>
+        <div class="text">
+            <p class="title">{{currentSong.title}}</p>
+            <p class="artist">{{currentSong.artists}}</p>
+        </div>
+        <div class="player">
+            <audio controls>
+                <source src={{currentSong.link}} type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+        <div class="controls">
+            
+        </div>
+    </div>
+</ng-template>

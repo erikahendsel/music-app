@@ -5,7 +5,7 @@
 
     <section class="music-list-container">
         <ng-container *ngFor="let song of musicList">
-            <div class="song-container">
+            <div class="song-container" (click)="appOnSongClicked(song)">
                 <div class="image">
                     <img src={{song.image}} alt="">
                 </div>
