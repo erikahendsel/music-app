@@ -4,7 +4,6 @@ import { ChangeDetectionStrategy, Component, OnChanges, OnInit, SimpleChanges } 
   selector: 'app-music-menu',
   templateUrl: './music-menu.component.html',
   styleUrls: ['./music-menu.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MusicMenuComponent implements OnInit {
   menuIsOpen: boolean = false

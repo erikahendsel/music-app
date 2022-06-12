@@ -6,7 +6,6 @@ import { MusicList } from 'src/app/interfaces/music-list';
   selector: 'app-music-list',
   templateUrl: './music-list.component.html',
   styleUrls: ['./music-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MusicListComponent implements OnInit {
 
