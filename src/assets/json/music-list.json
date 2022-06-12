@@ -2,16 +2,121 @@
     {
         "id": "1",
         "link": "/assets/songs/Cartoon - On & On (ft. Daniel Levi)(Cartoon x HAVSUN x WAYOUT Remix).mp3",
-        "image": "",
+        "image": "/assets/song-images/on-on-cartoon.jpg",
         "title": "On & On",
         "artists": "Cartoon ft. Daniel Levi",
         "attribution": "Song: Cartoon - On & On (ft. Daniel Levi)(Cartoon x HAVSUN x WAYOUT Remix)[NCS Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/OnAndOnRMX Watch: http://youtu.be/6NKZ7mscEyY"
     },
     {
         "id": "2",
-        "link": "https://www.youtube.com/watch?v=Z2DCVzzSUXo&list=RDQbxpeNNZ2Co",
+        "link": "/assets/songs/Tobu - If I Disappear (ft. Tom Mårtensson) [NCS Release].mp3",
+        "image": "/assets/song-images/if-i-disappear.png",
+        "title": "If I Disappear",
+        "artists": "Tobu ft. Tom Mårtensson",
+        "attribution": "Song: Tobu - If I Disappear (ft. Tom Mårtensson) [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/ifidisappear Watch: http://youtu.be/"
+    },
+    {
+        "id": "3",
+        "link": "/assets/songs/Keerthin - Escape [NCS Release].mp3",
+        "image": "/assets/song-images/escape.jpg",
+        "title": "Escape",
+        "artists": "Keerthin",
+        "attribution": "Song: Keerthin - Escape [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/KEscape Watch: http://youtu.be/"
+    },
+    {
+        "id": "4",
+        "link": "/assets/songs/if found - Dead of Night (VIP) [NCS Release].mp3",
+        "image": "/assets/song-images/dead-of-night-vip.jpg",
+        "title": "Dead of Night (VIP) ",
+        "artists": "if found",
+        "attribution": "Song: if found - Dead of Night (VIP) [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/DeadOfNightVIP Watch: http://youtu.be/cj-HnSUqx3w"
+    },
+    {
+        "id": "5",
+        "link": "/assets/songs/Donkong - Binary (feat. HANNY) [NCS Release].mp3",
+        "image": "/assets/song-images/binary-1642078833.jpg",
+        "title": "Binary",
+        "artists": "Donkong feat. HANNY",
+        "attribution": "Song: Donkong - Binary (feat. HANNY) [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream: http://NCS.io/Binary Watch: http://youtu.be/onKbG1Gj33c"
+    },
+    {
+        "id": "6",
+        "link": "",
         "image": "",
-        "title": "Monster",
-        "artists": "UNDREAM ft. IOVA"
-    }
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "7",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "8",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "9",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "10",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "11",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "12",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "13",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "14",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
+    {
+        "id": "15",
+        "link": "",
+        "image": "",
+        "title": "",
+        "artists": "",
+        "attribution": ""
+    },
 ]

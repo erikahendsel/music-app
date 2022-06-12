@@ -6,8 +6,14 @@
 
 <section class="music-list-container">
     <div *ngFor="let song of musicList">
-        {{song?.title}}
-        {{song?.artists}}
-        {{song?.image}}
+        <div class="song-container">
+            <div class="image">
+                <img src={{song.image}} alt="">
+            </div>
+            <div class="text">
+                {{song?.title}}
+                {{song?.artists}}
+            </div>
+        </div>
     </div>
 </section>

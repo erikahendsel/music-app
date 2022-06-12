@@ -1,9 +1,9 @@
 .container {
     position: absolute;
-    background-color: pink;
     height: 100%;
-    width: 90%;
+    width: 100%;
     z-index: 1;
+    background-image: linear-gradient(#704D62, #121212);
 }
 .music-list-container {
     position: absolute;
