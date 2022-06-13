@@ -16,8 +16,8 @@
             <p class="artist">{{currentSong.artists}}</p>
         </div>
         <div class="player">
-            <audio controls>
-                <source src={{currentSong.link}} type="audio/mpeg">
+            <audio controls autoplay>
+                <source src={{currentSong?.link}} type="audio/mpeg">
               Your browser does not support the audio element.
               </audio>
         </div>
