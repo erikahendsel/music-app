@@ -3,7 +3,7 @@
 </div>
 
 <section *ngIf="menuIsOpen; else player">
-    <app-music-list (isMenuOpen)="appOnMenuStateEmit($event)" (selectedSongId)="appOnSelectedSongEmit($event)"></app-music-list>
+    <app-music-list [musicList]="musicList" (isMenuOpen)="appOnMenuStateEmit($event)" (selectedSongId)="appOnSelectedSongEmit($event)"></app-music-list>
 </section>
 
 <ng-template #player>

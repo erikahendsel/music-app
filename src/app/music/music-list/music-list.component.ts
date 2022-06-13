@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectionStrategy, Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MusicList } from 'src/app/interfaces/music-list';
 
 @Component({
@@ -9,15 +9,13 @@ import { MusicList } from 'src/app/interfaces/music-list';
 })
 export class MusicListComponent implements OnInit {
 
+  @Input() musicList: MusicList[] = [];
   @Output() isMenuOpen = new EventEmitter<boolean>();
   @Output() selectedSongId = new EventEmitter<MusicList>();
 
-  musicList: MusicList[] = [];
-
-  constructor(private httpClient: HttpClient) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getMusicList();
   }
 
   appOnSongClicked(songId: MusicList) {
@@ -27,12 +25,6 @@ export class MusicListComponent implements OnInit {
 
   closeMenu() {
     this.isMenuOpen.emit(false)
-  }
-
-  getMusicList() {
-    this.httpClient.get<MusicList[]>('assets/json/music-list.json').subscribe((res) => {
-      this.musicList = res;
-    });
   }
 
 }

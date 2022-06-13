@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { MusicList } from 'src/app/interfaces/music-list';
 
@@ -10,10 +11,13 @@ export class MusicMenuComponent implements OnInit {
 
   menuIsOpen: boolean = false
   currentSong: MusicList = {} as MusicList;
+  musicList: MusicList[] = [];
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getMusicList();
+  }
 
   openMusicMenu() {
     this.menuIsOpen = true;
@@ -25,6 +29,13 @@ export class MusicMenuComponent implements OnInit {
 
   appOnSelectedSongEmit(selectedSong: MusicList) {
     this.currentSong = selectedSong;
+  }
+
+  getMusicList() {
+    this.httpClient.get<MusicList[]>('assets/json/music-list.json').subscribe((res: MusicList[]) => {
+      this.musicList = res;
+      this.currentSong = res[0];
+    });
   }
 
 }
